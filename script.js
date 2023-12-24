@@ -15,3 +15,6 @@ function slideBoxes() {
         }
     });
 };
+
+// In-order to use an arrow function or function expression you need to declare and initialize
+// it before using because arrow functions and function expressions are not hoisted.
