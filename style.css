@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tangerine', cursive;
+    background-color: #efedd6;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 350px;
+    background-color: #4682b4;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    border-radius: 12px;
+    color: azure;
+    font-size: 36px;
+    transform: translate(-400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
